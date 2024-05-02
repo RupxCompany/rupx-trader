@@ -1,0 +1,68 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+      x-api-key:
+      - your_test_api_key
+    method: GET
+    uri: https://api.upstox.com/v2/historical-candle/invalid_instrument/1d/2021-01-10/2021-01-01
+  response:
+    body:
+      string: '{"status":"error","errors":[{"errorCode":"UDAPI1021","message":"Instrument
+        key is of invalid format","propertyPath":"getHistoricalCandleData.instrumentKey","invalidValue":"invalid_instrument","error_code":"UDAPI1021","property_path":"getHistoricalCandleData.instrumentKey","invalid_value":"invalid_instrument"},{"errorCode":"UDAPI1020","message":"Interval
+        accepts one of (1minute,30minute,day,week,month)","propertyPath":"getHistoricalCandleData.interval","invalidValue":"1d","error_code":"UDAPI1020","property_path":"getHistoricalCandleData.interval","invalid_value":"1d"}]}'
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 87d89373c983b2a6-MAA
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 02 May 2024 14:07:09 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=JRVR_StCcHJwL3yi6xjjQZLH3oaJ9iqqH.g9JOH5kB8-1714658829-1.0.1.1-dNkS1HnOIMjNTJbGWZG93pX5upMtUW4RWs4sg9jV.suNU4MFHRZuEroqt3kbFLst;
+        path=/; expires=Thu, 02-May-24 14:37:09 GMT; domain=.upstox.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=7vIKbh814cfPd4dNufQmBcGLQya6ofjDEZUMzzblaOY-1714658829453-0.0.1.1-604800000;
+        path=/; domain=.upstox.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block
+      message:
+      - request failed
+      requestId:
+      - 4cad3d62-bfa5-487c-b2bd-2005cec7b2f5
+    status:
+      code: 400
+      message: Bad Request
+version: 1

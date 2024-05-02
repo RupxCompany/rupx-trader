@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+      x-api-key:
+      - your_test_api_key
+    method: GET
+    uri: https://api.upstox.com/v2/market-quote/quotes?instrument_key=NSE_EQ%7CINE669E01016,NSE_EQ%7CIN2920210241&instrument_keys=N%2CS%2CE%2C_%2CE%2CQ%2C%7C%2CI%2CN%2CE%2C6%2C6%2C9%2CE%2C0%2C1%2C0%2C1%2C6%2C%2C%2CN%2CS%2CE%2C_%2CE%2CQ%2C%7C%2CI%2CN%2C2%2C9%2C2%2C0%2C2%2C1%2C0%2C2%2C4%2C1
+  response:
+    body:
+      string: '{"status":"success","data":{"NSE_EQ:627RJ26":{"ohlc":{"open":0.0,"high":0.0,"low":0.0,"close":0.0},"depth":{"buy":[{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0}],"sell":[{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0}]},"timestamp":"2024-05-02T19:37:09.961+05:30","instrument_token":"NSE_EQ|IN2920210241","symbol":"627RJ26","last_price":0.0,"volume":0,"average_price":0.0,"oi":0.0,"net_change":0.0,"total_buy_quantity":0.0,"total_sell_quantity":0.0,"lower_circuit_limit":95.0,"upper_circuit_limit":105.0,"last_trade_time":"315513000000","oi_day_high":0.0,"oi_day_low":0.0},"NSE_EQ:IDEA":{"ohlc":{"open":13.25,"high":13.5,"low":13.1,"close":13.2},"depth":{"buy":[{"quantity":2345794,"price":13.2,"orders":211},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0}],"sell":[{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0},{"quantity":0,"price":0.0,"orders":0}]},"timestamp":"2024-05-02T19:37:09.961+05:30","instrument_token":"NSE_EQ|INE669E01016","symbol":"IDEA","last_price":13.2,"volume":808543713,"average_price":13.29,"oi":0.0,"net_change":0.0,"total_buy_quantity":2345794.0,"total_sell_quantity":0.0,"lower_circuit_limit":11.9,"upper_circuit_limit":14.5,"last_trade_time":"1714645777314","oi_day_high":0.0,"oi_day_low":0.0}}}'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 87d893768f5bb29d-MAA
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 02 May 2024 14:07:09 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=.Bi66HjciX_LFEluFSShFNH_rDBfSshcgt6o_QqKKbs-1714658829-1.0.1.1-WGNuNdrgbTRBPYysit.rbu4jZEBi403ffggJ1_e50RxetHJFLoVoO1bTMDt9fPQu;
+        path=/; expires=Thu, 02-May-24 14:37:09 GMT; domain=.upstox.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=XA6kqWTEi2ab9zaRTCxKQLVRAfKHyTTDhjioPZvyt5c-1714658829964-0.0.1.1-604800000;
+        path=/; domain=.upstox.com; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block
+      content-length:
+      - '1716'
+    status:
+      code: 200
+      message: OK
+version: 1
